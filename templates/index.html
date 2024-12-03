@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log File Analysis</title>
+</head>
+<body>
+    <h1>Log File Analysis</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="log_file">Upload Log File:</label>
+        <input type="file" name="log_file" required><br><br>
+        
+        <label for="threshold">Set Failed Login Threshold (default: 10):</label>
+        <input type="number" name="threshold" value="10" min="1"><br><br>
+        
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
